@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h4{
+    color: #008080;
+}
+#wrapper{
+    margin: 143PX;
+  
+    
+}
+h1{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #cccccc;
+}
+H2{
+    display: none;
+}
+img{
+    position: absolute;
+    top: 130px;
+    right: 186px; 
+    rotate: -17deg;
+}
+#about{
+    width: 80%;
+    margin-bottom:80px ;
+    color: #a6a6a6;
+}
+#about h3{
+    display: none;
+}
+.content{
+    margin-bottom:80px ;
+}
+#competencies{
+    display: flex;
+    flex-direction: column;
+}
+#competencies h3{
+    border-right: 1px solid black;
+ 
+    padding-right: -24px;
+
+    width: 132px;
+    height: 100px;
+}
+ .skills-primary, .skills-secondary{
+    position: relative;
+    right: -142px;
+    top: -100px;
+    display: flex;
+    height: 30px;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    color: white;
+}
+.skill{
+    padding: 9px;
+    width: 201px;
+    height: 33px;
+    margin: 20px;
+    background-color: #008080;
+}
+.skills-primary > .skill[data-skill="5"]  > span::after{
+    content: "\2605 \2605 \2605";
+    margin-left: 90px;
+    width: 20px;
+    height: 40px;
+    color: white;
+
+}
+.skills-primary > .skill[data-skill="3"]  > span::after{
+    content: "\2605 \2605 ";
+    margin-left: 120px;
+    width: 20px;
+    height: 40px;
+    color: white;
+
+}
+
+.skills-primary > .skill[data-skill="1"]  > span::after{
+    content: "\2605 ";
+    margin-left: 100px;
+    width: 20px;
+    height: 40px;
+    color: white;
+}
+
+.skills-secondary > .skill[data-skill="9"]  > span::after{
+    content: "\2605 \2605 \2605 \2605 ";
+    margin-left: 95px;
+    font-size: 10px;
+    color: white;
+
+}
+
+.skills-secondary > .skill[data-skill="5"]  > span::after{
+    content: "\2605 \2605 \2605 ";
+    margin-left: 118px;
+    font-size: 10px;
+    color: white;
+
+}
+
+.skills-secondary > .skill[data-skill="7"]  > span::after{
+    content: "\2605 \2605 \2605 \2605 ";
+    margin-left: 77px;
+    font-size: 10px;
+    color: white;
+
+}
+
+
+#experiences , #education ,#hobbies ,#contact{
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 10% 70%;
+    /* grid-template-rows: 50% 50%; */
+
+}
+#experiences h3, #education h3 ,#hobbies h3{ 
+   border-right: 1px solid black;
+   padding-right: -24px;
+/* margin-bottom: 30px; */
+   width: 132px;
+    grid-row: 1/3;
+}
+/* #experiences*/ h4{ 
+    margin-bottom: 10px;
+}
+.experience{
+  grid-template-columns: 1/3;
+  margin-bottom: 30px;
+
+
+}
+
+.experience-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    color: #9f9f9f;
+    margin-bottom: 30px;
+    grid-template-columns: 2/3;
+}
+ .experience-institution{
+    display: none;
+ }
+#hobbies{
+    height: 70px;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 100px;
+}
+
+.contact-email::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 90px;
+    height: 90px;
+    background-image: url('../images/email.png'); /* Replace with the actual image path */
+    background-size: cover;
+    background-position: center;
+}
+.contact-phone::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 164px;;
+    width: 90px;
+    height: 90px;
+    background-image: url('../images/phone.png'); /* Replace with the actual image path */
+    background-size: cover;
+    background-position: center;
+}
+.contact-github::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 287px;
+    width: 90px;
+    height: 90px;
+    background-image: url('../images/github.png'); /* Replace with the actual image path */
+    background-size: cover;
+    background-position: center;
+}
+.contact-facebook::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 387px;
+    width: 90px;
+    height: 90px;
+    background-image: url('../images/facebook.png'); /* Replace with the actual image path */
+    background-size: cover;
+    background-position: center;
+}
+ .contact-value , .contact-type , #contact h3{
+    display: none;
+}
