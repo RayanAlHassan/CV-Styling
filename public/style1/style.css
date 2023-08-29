@@ -4,6 +4,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* @media screen and (min-width:400px) { */
+    
+
 /*  sizing the title with the img in header */
 header {
     width: 100%;
@@ -27,7 +31,7 @@ img{
  height: 80px;
 }
 
-/* sizing the contact section in headee */
+/* sizing the contact section in header*/
 
 #contact{
     position: absolute;
@@ -196,5 +200,60 @@ img{
 .experience-location::before{
     content: "On";
     color: #9f9f9f;
+
+}
+
+/* } */
+@media only screen and (max-width: 390px){
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  header{
+    font-size: 10px;
+    height: 200px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  header hgroup{
+    margin-bottom: 20px;
+  }
+  h1, h2{
+    margin-bottom:10px ;
+  }
+  header div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 110px;
+    flex-direction: column;
+  }
+
+  .content{
+    margin: 40px;
+    display: flex;
+  flex-direction: column;
+
+  }
+ 
+
+  #contact{
+    position: initial;
+    width: 100%;
+}
+#contact h3{
+    display:block;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 13px;
+}
 
 }
