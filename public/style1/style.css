@@ -1,0 +1,200 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*  sizing the title with the img in header */
+header {
+    width: 100%;
+    background-color: #999999;
+    color: red;
+    /* margin-bottom: 40px; */
+ 
+
+}
+header div{
+
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 110px;
+    
+}
+img{
+ width: 80px;
+ height: 80px;
+}
+
+/* sizing the contact section in headee */
+
+#contact{
+    position: absolute;
+    top: 10px;
+    right: 473px;
+    width: 478px;
+}
+#contact h3{
+    display: none;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    width: 950px;
+  }
+  
+  .contact-type {
+    color: white;
+    background-color: red;
+    flex: 1;
+  }
+  
+  .contact-value {
+    width: 50%;
+    background-color:black ;
+    color: red;
+    flex: 2;
+    margin: 0px;
+  }
+
+  a{
+    color: red;
+    text-decoration: none;
+  }
+  .contact-skype dd {
+    color: black;
+  }
+  
+
+  /* styling the content with grid  */
+
+  .content{
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 50% 50%; /* Sidebar and content columns */
+    /* grid-gap: 65px; 20% spacing on all sides */
+    /* padding: 40px; */
+  }
+
+  /* styling the header with bullet  red */
+  h3{
+    font-size: 20px;
+   display: flex;
+   align-items: center;
+   margin-top: 20px;
+   margin-bottom: 20px;
+
+  }
+   h3 , h3{
+    border-bottom: 1px solid #cccccc;
+  }
+  h3::before{
+    content: '\2022'; /* Unicode bullet character */
+   color: red;
+    font-size: 40px;
+    margin-right: 8px;
+
+  }
+  .skills{
+    margin-bottom: 20px;
+
+  }
+  .skill{
+    height: 50px;
+    margin-bottom: 5px;
+    background-color: #999999;
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+}
+
+  /* fill the gap of % in skills */
+ .skill span{
+    color: white;
+  
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+    height: 40px;
+}
+  .skills-primary > .skill[data-skill="5"]  > span{
+    background-color: red;
+    width: 50%;
+}
+
+.skills-primary > .skill[data-skill="3"]  > span{
+    background-color: red;
+    width: 30%;
+}
+.skills-primary > .skill[data-skill="1"]  > span{
+    background-color: red;
+    width: 10%;
+}
+
+.skills-secondary > .skill[data-skill="9"] >span{
+    background-color: red;
+    width: 90%;
+}
+.skills-secondary > .skill[data-skill="5"] >span{
+    background-color: red;
+    width: 50%;
+}
+.skills-secondary > .skill[data-skill="7"] >span{
+    background-color: red;
+    width: 70%;
+}
+
+/* give the skills title */
+.skills-primary{
+    position: relative;
+}
+  .skills-primary::before{
+    content: "Main";
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+  .skills-primary::after{
+    
+    content: "Other";
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: absolute;
+    bottom: -42px;
+
+}
+.skills-secondary{
+  opacity: 0.5;
+  margin-top: 40px;
+}
+
+/* experiences styling */
+.experience-type , .experience-institution{
+    color: red;
+}
+.experience-description{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* add in amd on */
+.experience-location , .day , .month , .year{
+    color: #9f9f9f;
+}
+.experience-date-separator{
+    color: red;
+}
+.experience-location::before{
+    content: "In";
+    color: #9f9f9f;
+
+}
+.experience-location::before{
+    content: "On";
+    color: #9f9f9f;
+
+}
