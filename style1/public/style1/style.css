@@ -29,6 +29,7 @@ header div{
 img{
  width: 80px;
  height: 80px;
+ transform: scaleY(1.5);
 }
 
 /* sizing the contact section in header*/
@@ -90,7 +91,7 @@ img{
    margin-bottom: 20px;
 
   }
-   h3 , h3{
+   h3 hy{
     border-bottom: 1px solid #cccccc;
   }
   h3::before{
@@ -243,17 +244,16 @@ img{
  
 
   #contact{
-    position: initial;
+      position: initial;
+      width: 100%;
+  }
+  #contact h3{
+      display:block;
+  }
+  .contact {
+    display: flex;
     width: 100%;
-}
-#contact h3{
-    display:block;
-}
-.contact {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  font-size: 13px;
-}
+    font-size: 13px;
+  }
 
 }
