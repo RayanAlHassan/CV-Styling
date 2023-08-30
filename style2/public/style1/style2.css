@@ -50,11 +50,11 @@ img{
  .skills-primary, .skills-secondary{
     position: relative;
     right: -142px;
-    top: -100px;
+    top: -122px;
     display: flex;
-    height: 30px;
+    /* height: 30px; */
     justify-content: flex-start;
-    margin-bottom: 10px;
+    margin-bottom: -28px;
     flex-direction: row;
     align-content: center;
     align-items: center;
@@ -210,4 +210,184 @@ img{
 }
  .contact-value , .contact-type , #contact h3{
     display: none;
+}
+
+
+@media screen and (max-width: 390px){
+    #wrapper{
+        margin: 73PX;
+      
+        
+    }
+    img{
+        display: none;
+    }
+    #competencies {
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 30px;
+
+    }
+
+    #competencies h3 {
+        border: none; /* Remove the border for narrow screens */
+        width: auto; /* Allow content to dictate width */
+        height: auto; /* Allow content to dictate height */
+        margin-bottom: 20px;
+    }
+
+    .skills-primary,
+    .skills-secondary {
+        position: initial;
+        right: 0;
+        top: 0;
+        margin: 0;
+        justify-content: center; /* Center skills */
+        align-items: center;
+    }
+
+    .skill {
+        margin: 10px 10px; /* Adjust margin for narrow screens */
+    }
+
+
+
+
+
+
+
+
+    .skill{
+        width:120px;
+    }
+    #competencies h3 , #experiences h3 ,#education h3,#hobbies h3{
+        border-right: none;
+        text-decoration: underline;
+    }
+    #experiences{
+        grid-template-columns: auto;
+        grid-template-areas: 
+    't'
+    's'
+    'p';   
+    }
+    #education{
+       grid-template-columns: auto;
+       grid-template-areas: 
+       'tit'
+       'sub'
+       'p';
+   }
+ 
+   #hobbies{
+       display: grid;
+       grid-template-columns: auto;
+       row-gap: 15px;
+   }
+   .skill{
+    margin: 1px;
+    padding: 0px;
+    width: 89px;
+    font-size: 11px;
+
+   }
+   .skills-primary > .skill[data-skill="5"]  > span::after{
+    content: "\2605 \2605 \2605";
+    margin-left: 10px;
+    width: 20px;
+    height: 40px;
+    color: white;
+
+}
+.skills-primary > .skill[data-skill="3"]  > span::after{
+    content: "\2605 \2605 ";
+    margin-left: 10px;
+    width: 20px;
+    height: 40px;
+    color: white;
+
+}
+
+.skills-primary > .skill[data-skill="1"]  > span::after{
+    content: "\2605 ";
+    margin-left: 10px;
+    width: 20px;
+    height: 40px;
+    color: white;
+}
+
+.skills-secondary > .skill[data-skill="9"]  > span::after{
+    content: "\2605 \2605 \2605 \2605 ";
+    margin-left: 10px;
+    font-size: 10px;
+    color: white;
+
+}
+
+.skills-secondary > .skill[data-skill="5"]  > span::after{
+    content: "\2605 \2605 \2605 ";
+    margin-left: 10px;
+    font-size: 10px;
+    color: white;
+
+}
+
+.skills-secondary > .skill[data-skill="7"]  > span::after{
+    content: "\2605 \2605 \2605 \2605 ";
+    margin-left: 5px;
+    font-size: 10px;
+    color: white;
+
+}
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    margin-left: -112px;
+}
+.contact-email::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 80px;
+    height: 90px;
+    background-image: url('../images/email.png'); /* Replace with the actual image path */
+    background-size: cover;
+    background-position: center;
+}
+.contact-phone::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 123px;
+    width: 80px;
+    height: 90px;
+    background-image: url('../images/phone.png'); /* Replace with the actual image path */
+    background-size: cover;
+    background-position: center;
+}
+.contact-github::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 213px;
+    width: 80px;
+    height: 90px;
+    background-image: url('../images/github.png'); /* Replace with the actual image path */
+    background-size: cover;
+    background-position: center;
+}
+.contact-facebook::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 323px;
+    width: 80px;
+    height: 90px;
+    background-image: url('../images/facebook.png'); /* Replace with the actual image path */
+    background-size: cover;
+    background-position: center;
+}
 }
